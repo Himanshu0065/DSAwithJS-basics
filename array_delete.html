@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let data=[10,15,20,25,30,35];
+        // let position=4;
+        // for(let i=position; i<data.length-1; i++){
+        //     data[i]=data[i+1];
+        // }
+        // data.length= data.length-1;
+        // console.warn(data)
+        function removeEl()
+        {
+          let data=[10,15,20,25,30,35];
+        let position=document.getElementById('position').value;
+        position=parseInt(position) // parse changes the string into integer
+        for(let i=position; i<data.length-1; i++){
+            data[i]=data[i+1];
+        }
+        data.length= data.length-1;  //decreases the length of the array
+        console.warn(data)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="position" placeholder="enter position">
+    <button onclick="removeEl()">Remove Element</button>
+</body>
+</html>
