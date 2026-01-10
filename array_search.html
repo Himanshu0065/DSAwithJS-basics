@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Array Search</title>
+    <script>
+        // let data=[5,10,15,20,25,30];
+        // let item = 5;
+        // let index= undefined;
+        // for(i=0; i<=data.length-1; i++){
+        //     if (data[i]===item){
+        //         index=i;
+        //         break;
+
+        //     }
+        // }
+        // console.log(index);
+        function searchEl(){
+             let data=[5,10,15,20,25,30];
+        let item =document.getElementById('Element').value;
+        let index= undefined;
+        for(i=0; i<=data.length-1; i++){
+            if (data[i]===parseInt(item)){
+                index=i;
+                break;
+
+            }
+        }
+        console.log(index);
+        }
+        
+
+    </script>
+</head>
+<body>
+    <input type="text" id="Element" placeholder="Element to serach"/>
+    <button onclick="searchEl()">Search</button>
+</body>
+</html>
